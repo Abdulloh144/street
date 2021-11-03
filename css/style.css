@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --robo:'Roboto';
+    --rale:'Raleway';
+}
+/* ==============HEADER====================== */
+header{
+    background: black;
+}
+ .header__icon{
+    background: white;
+ }
+ .header__icon:hover{
+    background: cyan;
+}
+/* header__top */
+.header__top{
+    padding: 18px 0;
+}
+header .vector{
+    font-size: 20px;
+    color: white;
+    margin-right: 5px;
+}
+.header__top a{
+    font-size: 16px;
+    color: white;
+    font-family:var(--robo) ;
+    font-weight: 700px;
+    transition: 0.5s;
+}
+.header__top a:hover,.header__top__title:hover,header .vector:hover{
+    color: cyan;
+    text-decoration: none;
+}
+header .header__top__title{
+    font-size: 16px;
+    color: white;
+    font-family:var(--robo) ;
+    font-weight: 700px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+/* header__center */
+.header__center{
+    border-top: solid white 1px;
+}
+.header__center h2 {
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    font-family: var(--robo);
+    font-weight: 400;
+    border: 4px solid #06600F;
+    background: rgba(10, 148, 24, 0.75);
+    border-radius: 4px;
+    padding: 12px 18px;
+}
+.header__center__title{
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.5s;  
+    padding: 22px 14px;
+}
+.header__center__title:hover{
+     background: rgba(105, 207, 23, 0.75);
+}
+/* header__bg */
+.header__bg{
+    background: url(../images/food-burger-wallpaper-preview\ 1.png) no-repeat center/cover;
+}
+/* header__end */
+.header__end{
+    padding-top: 170px ;
+}
+.header__end h1{
+    font-size: 72px;
+    color: #69CF17;
+    margin-bottom: 18px;
+    font-family: var(--rale);
+    font-weight: 700;
+}
+.header__end h4{
+    font-size: 36px;
+    color: #69CF17 ;
+    margin-bottom: 18px;
+    font-family: var(--rale);
+    font-weight: 400;
+}
+.header__end p{
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    margin-bottom: 30px;
+}
+/* header__buttom */
+.header__buttom{
+    padding-bottom: 180px;
+}
+.header__buttom p{
+    font-size: 50px;
+    width: 285px;
+    background: rgba(105, 207, 23, 0.5);
+    padding: 28px 76px;
+    color: white;
+    font-family: var(--rale);
+    font-weight: 400;
+}
+.header__buttom a{
+    font-size: 18px;
+    width: 255px;
+    background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    padding: 15px 70px;
+    color: white;
+}
+/* header section */
+header section{
+    display: block;
+    width: 100%;
+    background: #0C0C0C;
+    height: 48px;
+}
+/* =============MAIN=============== */
+/* MENU */
+main .menu{
+    background: #292929;
+    padding: 20px 0;
+    box-shadow: 0px 1px 8px rgba(17, 17, 17, 0.3);
+}
+main .menu a{
+    font-size: 18px;
+    color: white;
+    margin-left: 36px;
+    font-family: var(--rale);
+    font-weight: 400;
+}
+/* ORDERS */
+.orders{
+    background: #393636;
+}
+.order{
+    background: #0C0C0C;
+    border: solid 3px white;
+    padding: 15px ;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+.burger-bg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.burger-bg img{
+    width: 100%;
+}
+.burger-bg::after{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: o;
+    transition: 0.5s;
+}
+.burger-bg:hover::after{
+    opacity: 1;
+    background:  rgba(105, 207, 23, 0.5);
+}
+.burger-bg a{
+   position: absolute;
+   font-size: 60px;
+   color: white;
+   opacity: 0;
+}
+.burger-bg:hover a{
+    opacity: 1;
+    z-index: 2;
+}
+.order h3{
+    font-size: 19px;
+    color: white;
+    font-family: var(--rale);
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.order p{
+    font-size: 19px;
+    line-height: 25px;
+    color: white;
+    font-family: var(--rale);
+    font-weight: 400;
+}
+/* FILIAL */
+.filial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filial p{
+    font-size: 50px;
+    color: #69CF17;
+    font-family: var(--rale);
+    font-weight: 400;
+}
+/* ==============FOOTER=============== */
+/* FOOTER__TOP */
+.footer__top{
+    background:  linear-gradient(180deg, #000000 0%, rgba(105, 207, 23, 0.5) 100%);
+    padding-top: 30px;
+    padding-bottom: 138px;
+}
+.footer__top h2{
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+    width: 216px;
+    font-family: var(--robo);
+    font-weight: 400;
+    border: 4px solid #06600F;
+    background: rgba(10, 148, 24, 0.75);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 0;
+}
+.footer__top a{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 20px;
+    color: white;
+    font-family: var(--robo);
+    font-weight: 700;
+}
+.footer__menu{
+    font-size: 20px;
+    color: white;
+    font-family: var(--robo);
+    font-weight: 400;
+    margin-top: 90px;
+}
+/* =========================MEDIA================== */
+@media (max-width:991px) {
+    .header__center__title:hover{
+        background: none;
+    }
+}
+@media (max-width:767px) {
+    .header__buttom a{
+        margin-top: 50px;
+    }
+    .header__buttom {
+        padding-bottom: 100px;
+    }
+}
+@media (max-width:388px) {
+    .header__end{
+        padding-top: 100px;
+    }
+    .header__end h1{
+        font-size: 36px;
+    }
+    .header__buttom p{
+        font-size: 25px;
+        width: 250px;
+        padding: 12px 10px;
+        text-align: center;
+    }
+}
+/* ================PAGE.HTML=============== */
+.page-main{
+    background: #0C0C0C;
+    padding: 30px 0;
+}
+.page-main .main__bg{
+    background: url(../images/photo_cropped\ 1.jpg ) center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.page-main .main__bg h1{
+    font-size: 55px;
+    color: #69CF17;
+    margin: 167px 0;
+    text-transform: uppercase;
+}
+.page-main .main__title p{
+    font-size: 18px ;
+    line-height: 25px;
+    color: white;
+    text-align: justify;
+}
+@media (max-width:387px) {
+    .page-main .main__bg h1{
+        font-size: 40px;
+    }
+}
